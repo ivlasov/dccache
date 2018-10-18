@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		787D90B3217935B70058D6CF /* DCCache_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D90B1217935B70058D6CF /* DCCache_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787D90C0217935C10058D6CF /* DCCache_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D90BE217935C10058D6CF /* DCCache_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787D90CD217935CB0058D6CF /* DCCache_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D90CB217935CB0058D6CF /* DCCache_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787D90DA217935DB0058D6CF /* DCCache_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D90D8217935DB0058D6CF /* DCCache_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787D90E5217935E50058D6CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90E4217935E50058D6CF /* AppDelegate.swift */; };
+		787D90E7217935E50058D6CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90E6217935E50058D6CF /* ViewController.swift */; };
+		787D90EA217935E50058D6CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787D90E8217935E50058D6CF /* Main.storyboard */; };
+		787D90EC217935E60058D6CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787D90EB217935E60058D6CF /* Assets.xcassets */; };
+		787D90EF217935E60058D6CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 787D90ED217935E60058D6CF /* LaunchScreen.storyboard */; };
+		787D90FA217936110058D6CF /* CacheDiskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F4217936110058D6CF /* CacheDiskProvider.swift */; };
+		787D90FB217936110058D6CF /* CacheDiskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F4217936110058D6CF /* CacheDiskProvider.swift */; };
+		787D90FC217936110058D6CF /* CacheDiskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F4217936110058D6CF /* CacheDiskProvider.swift */; };
+		787D90FD217936110058D6CF /* CacheDiskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F4217936110058D6CF /* CacheDiskProvider.swift */; };
+		787D9106217936110058D6CF /* CacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F7217936110058D6CF /* CacheOptions.swift */; };
+		787D9107217936110058D6CF /* CacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F7217936110058D6CF /* CacheOptions.swift */; };
+		787D9108217936110058D6CF /* CacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F7217936110058D6CF /* CacheOptions.swift */; };
+		787D9109217936110058D6CF /* CacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F7217936110058D6CF /* CacheOptions.swift */; };
+		787D910A217936110058D6CF /* CacheTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F8217936110058D6CF /* CacheTask.swift */; };
+		787D910B217936110058D6CF /* CacheTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F8217936110058D6CF /* CacheTask.swift */; };
+		787D910C217936110058D6CF /* CacheTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F8217936110058D6CF /* CacheTask.swift */; };
+		787D910D217936110058D6CF /* CacheTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F8217936110058D6CF /* CacheTask.swift */; };
+		787D910E217936110058D6CF /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F9217936110058D6CF /* Cache.swift */; };
+		787D910F217936110058D6CF /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F9217936110058D6CF /* Cache.swift */; };
+		787D9110217936110058D6CF /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F9217936110058D6CF /* Cache.swift */; };
+		787D9111217936110058D6CF /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D90F9217936110058D6CF /* Cache.swift */; };
+		787D9114217937110058D6CF /* DCLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D9112217937110058D6CF /* DCLog.framework */; };
+		787D9115217937110058D6CF /* DCUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D9113217937110058D6CF /* DCUtils.framework */; };
+		787D9118217937210058D6CF /* DCLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D9116217937200058D6CF /* DCLog.framework */; };
+		787D9119217937210058D6CF /* DCUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D9117217937200058D6CF /* DCUtils.framework */; };
+		787D911C2179372D0058D6CF /* DCLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D911A2179372C0058D6CF /* DCLog.framework */; };
+		787D911D2179372D0058D6CF /* DCUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D911B2179372C0058D6CF /* DCUtils.framework */; };
+		787D9120217937350058D6CF /* DCUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D911E217937350058D6CF /* DCUtils.framework */; };
+		787D9121217937350058D6CF /* DCLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D911F217937350058D6CF /* DCLog.framework */; };
+		787D9123217938C70058D6CF /* CacheNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9122217938C70058D6CF /* CacheNetworkSession.swift */; };
+		787D9124217938C70058D6CF /* CacheNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9122217938C70058D6CF /* CacheNetworkSession.swift */; };
+		787D9125217938C70058D6CF /* CacheNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9122217938C70058D6CF /* CacheNetworkSession.swift */; };
+		787D9126217938C70058D6CF /* CacheNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9122217938C70058D6CF /* CacheNetworkSession.swift */; };
+		787D9127217938C70058D6CF /* CacheNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D9122217938C70058D6CF /* CacheNetworkSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		787D90AF217935B60058D6CF /* DCCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787D90B1217935B70058D6CF /* DCCache_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCache_iOS.h; sourceTree = "<group>"; };
+		787D90B2217935B70058D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787D90BC217935C10058D6CF /* DCCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787D90BE217935C10058D6CF /* DCCache_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCache_macOS.h; sourceTree = "<group>"; };
+		787D90BF217935C10058D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787D90C9217935CA0058D6CF /* DCCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787D90CB217935CB0058D6CF /* DCCache_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCache_watchOS.h; sourceTree = "<group>"; };
+		787D90CC217935CB0058D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787D90D6217935DB0058D6CF /* DCCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787D90D8217935DB0058D6CF /* DCCache_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCCache_tvOS.h; sourceTree = "<group>"; };
+		787D90D9217935DB0058D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787D90E2217935E50058D6CF /* TestApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		787D90E4217935E50058D6CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		787D90E6217935E50058D6CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		787D90E9217935E50058D6CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		787D90EB217935E60058D6CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		787D90EE217935E60058D6CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		787D90F0217935E60058D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787D90F4217936110058D6CF /* CacheDiskProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheDiskProvider.swift; sourceTree = "<group>"; };
+		787D90F7217936110058D6CF /* CacheOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheOptions.swift; sourceTree = "<group>"; };
+		787D90F8217936110058D6CF /* CacheTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTask.swift; sourceTree = "<group>"; };
+		787D90F9217936110058D6CF /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		787D9112217937110058D6CF /* DCLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCLog.framework; path = Carthage/Build/iOS/DCLog.framework; sourceTree = SOURCE_ROOT; };
+		787D9113217937110058D6CF /* DCUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCUtils.framework; path = Carthage/Build/iOS/DCUtils.framework; sourceTree = SOURCE_ROOT; };
+		787D9116217937200058D6CF /* DCLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCLog.framework; path = Carthage/Build/Mac/DCLog.framework; sourceTree = SOURCE_ROOT; };
+		787D9117217937200058D6CF /* DCUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCUtils.framework; path = Carthage/Build/Mac/DCUtils.framework; sourceTree = SOURCE_ROOT; };
+		787D911A2179372C0058D6CF /* DCLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCLog.framework; path = Carthage/Build/tvOS/DCLog.framework; sourceTree = SOURCE_ROOT; };
+		787D911B2179372C0058D6CF /* DCUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCUtils.framework; path = Carthage/Build/tvOS/DCUtils.framework; sourceTree = SOURCE_ROOT; };
+		787D911E217937350058D6CF /* DCUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCUtils.framework; path = Carthage/Build/watchOS/DCUtils.framework; sourceTree = SOURCE_ROOT; };
+		787D911F217937350058D6CF /* DCLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DCLog.framework; path = Carthage/Build/watchOS/DCLog.framework; sourceTree = SOURCE_ROOT; };
+		787D9122217938C70058D6CF /* CacheNetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheNetworkSession.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		787D90AC217935B60058D6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9114217937110058D6CF /* DCLog.framework in Frameworks */,
+				787D9115217937110058D6CF /* DCUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90B9217935C10058D6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9118217937210058D6CF /* DCLog.framework in Frameworks */,
+				787D9119217937210058D6CF /* DCUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90C6217935CA0058D6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9121217937350058D6CF /* DCLog.framework in Frameworks */,
+				787D9120217937350058D6CF /* DCUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90D3217935DB0058D6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D911C2179372D0058D6CF /* DCLog.framework in Frameworks */,
+				787D911D2179372D0058D6CF /* DCUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90DF217935E50058D6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		787D90952179355E0058D6CF = {
+			isa = PBXGroup;
+			children = (
+				787D90A12179355E0058D6CF /* DCCache */,
+				787D90B0217935B70058D6CF /* DCCache-iOS */,
+				787D90BD217935C10058D6CF /* DCCache-macOS */,
+				787D90CA217935CA0058D6CF /* DCCache-watchOS */,
+				787D90D7217935DB0058D6CF /* DCCache-tvOS */,
+				787D90E3217935E50058D6CF /* TestApp-iOS */,
+				787D90A02179355E0058D6CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		787D90A02179355E0058D6CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				787D90AF217935B60058D6CF /* DCCache.framework */,
+				787D90BC217935C10058D6CF /* DCCache.framework */,
+				787D90C9217935CA0058D6CF /* DCCache.framework */,
+				787D90D6217935DB0058D6CF /* DCCache.framework */,
+				787D90E2217935E50058D6CF /* TestApp-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		787D90A12179355E0058D6CF /* DCCache */ = {
+			isa = PBXGroup;
+			children = (
+				787D90F9217936110058D6CF /* Cache.swift */,
+				787D90F4217936110058D6CF /* CacheDiskProvider.swift */,
+				787D9122217938C70058D6CF /* CacheNetworkSession.swift */,
+				787D90F7217936110058D6CF /* CacheOptions.swift */,
+				787D90F8217936110058D6CF /* CacheTask.swift */,
+			);
+			path = DCCache;
+			sourceTree = "<group>";
+		};
+		787D90B0217935B70058D6CF /* DCCache-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				787D90B1217935B70058D6CF /* DCCache_iOS.h */,
+				787D90B2217935B70058D6CF /* Info.plist */,
+				787D9112217937110058D6CF /* DCLog.framework */,
+				787D9113217937110058D6CF /* DCUtils.framework */,
+			);
+			path = "DCCache-iOS";
+			sourceTree = "<group>";
+		};
+		787D90BD217935C10058D6CF /* DCCache-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				787D90BE217935C10058D6CF /* DCCache_macOS.h */,
+				787D90BF217935C10058D6CF /* Info.plist */,
+				787D9116217937200058D6CF /* DCLog.framework */,
+				787D9117217937200058D6CF /* DCUtils.framework */,
+			);
+			path = "DCCache-macOS";
+			sourceTree = "<group>";
+		};
+		787D90CA217935CA0058D6CF /* DCCache-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				787D90CB217935CB0058D6CF /* DCCache_watchOS.h */,
+				787D90CC217935CB0058D6CF /* Info.plist */,
+				787D911F217937350058D6CF /* DCLog.framework */,
+				787D911E217937350058D6CF /* DCUtils.framework */,
+			);
+			path = "DCCache-watchOS";
+			sourceTree = "<group>";
+		};
+		787D90D7217935DB0058D6CF /* DCCache-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				787D90D8217935DB0058D6CF /* DCCache_tvOS.h */,
+				787D90D9217935DB0058D6CF /* Info.plist */,
+				787D911A2179372C0058D6CF /* DCLog.framework */,
+				787D911B2179372C0058D6CF /* DCUtils.framework */,
+			);
+			path = "DCCache-tvOS";
+			sourceTree = "<group>";
+		};
+		787D90E3217935E50058D6CF /* TestApp-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				787D90E4217935E50058D6CF /* AppDelegate.swift */,
+				787D90E6217935E50058D6CF /* ViewController.swift */,
+				787D90E8217935E50058D6CF /* Main.storyboard */,
+				787D90EB217935E60058D6CF /* Assets.xcassets */,
+				787D90ED217935E60058D6CF /* LaunchScreen.storyboard */,
+				787D90F0217935E60058D6CF /* Info.plist */,
+			);
+			path = "TestApp-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		787D90AA217935B60058D6CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D90B3217935B70058D6CF /* DCCache_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90B7217935C10058D6CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D90C0217935C10058D6CF /* DCCache_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90C4217935CA0058D6CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D90CD217935CB0058D6CF /* DCCache_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90D1217935DB0058D6CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D90DA217935DB0058D6CF /* DCCache_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		787D90AE217935B60058D6CF /* DCCache-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787D90B6217935B70058D6CF /* Build configuration list for PBXNativeTarget "DCCache-iOS" */;
+			buildPhases = (
+				787D90AA217935B60058D6CF /* Headers */,
+				787D90AB217935B60058D6CF /* Sources */,
+				787D90AC217935B60058D6CF /* Frameworks */,
+				787D90AD217935B60058D6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCCache-iOS";
+			productName = "DCCache-iOS";
+			productReference = 787D90AF217935B60058D6CF /* DCCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		787D90BB217935C10058D6CF /* DCCache-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787D90C1217935C10058D6CF /* Build configuration list for PBXNativeTarget "DCCache-macOS" */;
+			buildPhases = (
+				787D90B7217935C10058D6CF /* Headers */,
+				787D90B8217935C10058D6CF /* Sources */,
+				787D90B9217935C10058D6CF /* Frameworks */,
+				787D90BA217935C10058D6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCCache-macOS";
+			productName = "DCCache-macOS";
+			productReference = 787D90BC217935C10058D6CF /* DCCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		787D90C8217935CA0058D6CF /* DCCache-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787D90CE217935CB0058D6CF /* Build configuration list for PBXNativeTarget "DCCache-watchOS" */;
+			buildPhases = (
+				787D90C4217935CA0058D6CF /* Headers */,
+				787D90C5217935CA0058D6CF /* Sources */,
+				787D90C6217935CA0058D6CF /* Frameworks */,
+				787D90C7217935CA0058D6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCCache-watchOS";
+			productName = "DCCache-watchOS";
+			productReference = 787D90C9217935CA0058D6CF /* DCCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		787D90D5217935DB0058D6CF /* DCCache-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787D90DB217935DB0058D6CF /* Build configuration list for PBXNativeTarget "DCCache-tvOS" */;
+			buildPhases = (
+				787D90D1217935DB0058D6CF /* Headers */,
+				787D90D2217935DB0058D6CF /* Sources */,
+				787D90D3217935DB0058D6CF /* Frameworks */,
+				787D90D4217935DB0058D6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCCache-tvOS";
+			productName = "DCCache-tvOS";
+			productReference = 787D90D6217935DB0058D6CF /* DCCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		787D90E1217935E50058D6CF /* TestApp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787D90F1217935E60058D6CF /* Build configuration list for PBXNativeTarget "TestApp-iOS" */;
+			buildPhases = (
+				787D90DE217935E50058D6CF /* Sources */,
+				787D90DF217935E50058D6CF /* Frameworks */,
+				787D90E0217935E50058D6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestApp-iOS";
+			productName = "TestApp-iOS";
+			productReference = 787D90E2217935E50058D6CF /* TestApp-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		787D90962179355E0058D6CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Igor Danich";
+				TargetAttributes = {
+					787D90AE217935B60058D6CF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					787D90BB217935C10058D6CF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					787D90C8217935CA0058D6CF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					787D90D5217935DB0058D6CF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					787D90E1217935E50058D6CF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 787D90992179355E0058D6CF /* Build configuration list for PBXProject "DCCache" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 787D90952179355E0058D6CF;
+			productRefGroup = 787D90A02179355E0058D6CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				787D90AE217935B60058D6CF /* DCCache-iOS */,
+				787D90BB217935C10058D6CF /* DCCache-macOS */,
+				787D90C8217935CA0058D6CF /* DCCache-watchOS */,
+				787D90D5217935DB0058D6CF /* DCCache-tvOS */,
+				787D90E1217935E50058D6CF /* TestApp-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		787D90AD217935B60058D6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90BA217935C10058D6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90C7217935CA0058D6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90D4217935DB0058D6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90E0217935E50058D6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D90EF217935E60058D6CF /* LaunchScreen.storyboard in Resources */,
+				787D90EC217935E60058D6CF /* Assets.xcassets in Resources */,
+				787D90EA217935E50058D6CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		787D90AB217935B60058D6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9106217936110058D6CF /* CacheOptions.swift in Sources */,
+				787D910A217936110058D6CF /* CacheTask.swift in Sources */,
+				787D910E217936110058D6CF /* Cache.swift in Sources */,
+				787D9123217938C70058D6CF /* CacheNetworkSession.swift in Sources */,
+				787D90FA217936110058D6CF /* CacheDiskProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90B8217935C10058D6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9107217936110058D6CF /* CacheOptions.swift in Sources */,
+				787D910B217936110058D6CF /* CacheTask.swift in Sources */,
+				787D910F217936110058D6CF /* Cache.swift in Sources */,
+				787D9124217938C70058D6CF /* CacheNetworkSession.swift in Sources */,
+				787D90FB217936110058D6CF /* CacheDiskProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90C5217935CA0058D6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9108217936110058D6CF /* CacheOptions.swift in Sources */,
+				787D910C217936110058D6CF /* CacheTask.swift in Sources */,
+				787D9110217936110058D6CF /* Cache.swift in Sources */,
+				787D9125217938C70058D6CF /* CacheNetworkSession.swift in Sources */,
+				787D90FC217936110058D6CF /* CacheDiskProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90D2217935DB0058D6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D9109217936110058D6CF /* CacheOptions.swift in Sources */,
+				787D910D217936110058D6CF /* CacheTask.swift in Sources */,
+				787D9111217936110058D6CF /* Cache.swift in Sources */,
+				787D9126217938C70058D6CF /* CacheNetworkSession.swift in Sources */,
+				787D90FD217936110058D6CF /* CacheDiskProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787D90DE217935E50058D6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787D90E7217935E50058D6CF /* ViewController.swift in Sources */,
+				787D9127217938C70058D6CF /* CacheNetworkSession.swift in Sources */,
+				787D90E5217935E50058D6CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		787D90E8217935E50058D6CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787D90E9217935E50058D6CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		787D90ED217935E60058D6CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				787D90EE217935E60058D6CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		787D90A52179355E0058D6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		787D90A62179355E0058D6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		787D90B4217935B70058D6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "DCCache-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.ios;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		787D90B5217935B70058D6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "DCCache-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.ios;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		787D90C2217935C10058D6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "DCCache-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.macos;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		787D90C3217935C10058D6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "DCCache-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.macos;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		787D90CF217935CB0058D6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "DCCache-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.watchos;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		787D90D0217935CB0058D6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "DCCache-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.watchos;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		787D90DC217935DB0058D6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "DCCache-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.tvos;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		787D90DD217935DB0058D6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "DCCache-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.cache.tvos;
+				PRODUCT_MODULE_NAME = DCCache;
+				PRODUCT_NAME = DCCache;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		787D90F2217935E60058D6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TestApp-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dclife.TestApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		787D90F3217935E60058D6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TestApp-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dclife.TestApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		787D90992179355E0058D6CF /* Build configuration list for PBXProject "DCCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787D90A52179355E0058D6CF /* Debug */,
+				787D90A62179355E0058D6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787D90B6217935B70058D6CF /* Build configuration list for PBXNativeTarget "DCCache-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787D90B4217935B70058D6CF /* Debug */,
+				787D90B5217935B70058D6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787D90C1217935C10058D6CF /* Build configuration list for PBXNativeTarget "DCCache-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787D90C2217935C10058D6CF /* Debug */,
+				787D90C3217935C10058D6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787D90CE217935CB0058D6CF /* Build configuration list for PBXNativeTarget "DCCache-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787D90CF217935CB0058D6CF /* Debug */,
+				787D90D0217935CB0058D6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787D90DB217935DB0058D6CF /* Build configuration list for PBXNativeTarget "DCCache-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787D90DC217935DB0058D6CF /* Debug */,
+				787D90DD217935DB0058D6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787D90F1217935E60058D6CF /* Build configuration list for PBXNativeTarget "TestApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787D90F2217935E60058D6CF /* Debug */,
+				787D90F3217935E60058D6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 787D90962179355E0058D6CF /* Project object */;
+}
