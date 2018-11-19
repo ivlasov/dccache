@@ -38,7 +38,7 @@ extension Cache {
         }
         
         func cancel(task: CacheTask) {
-            tasks.remove(predicate: {$0.id == task.id})
+            tasks.removeAll(where: {$0.id == task.id} )
             if tasks.count == 0 {
                 sessionTask?.cancel()
             }

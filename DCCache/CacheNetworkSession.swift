@@ -62,13 +62,13 @@ extension Cache {
         private func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
             guard let error = error as NSError? else {return}
             tasks.first(where: {$0.task == task})?.finish(url: nil, error: error as NSError?)
-            tasks.remove(predicate: {$0.task == task})
+            tasks.removeAll(where: {$0.task == task} )
             print("CACHE ERROR " + (task.originalRequest?.url?.absoluteString ?? "") + error.localizedDescription)
         }
         
         public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
             tasks.first(where: {$0.task == downloadTask})?.finish(url: location, error: nil)
-            tasks.remove(predicate: {$0.task == downloadTask})
+            tasks.removeAll(where: {$0.task == downloadTask} )
         }
         
         func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {

@@ -138,7 +138,7 @@ open class Cache {
         item.tasks << task
         tasks << item
         item.perform(queue: queue, session: session) { [weak self] in
-            self?.tasks.remove(predicate: {$0.identifier == item.identifier})
+            self?.tasks.removeAll(where: {$0.identifier == item.identifier} )
         }
     }
     
