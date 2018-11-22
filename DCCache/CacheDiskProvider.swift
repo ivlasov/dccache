@@ -18,7 +18,7 @@ extension Cache {
         }
         
         fileprivate var cacheFolder: String? {
-            let path = Storage.Directory.path(known: .cache(path: "mp.cache/\(identifier)"))
+            let path = NSHomeDirectory().appending(path: "Library/Caches/mp.cache/\(identifier)")
             var isDir: ObjCBool = false
             if !FileManager.default.fileExists(atPath: path, isDirectory: &isDir) || !isDir.boolValue {
                 do {
